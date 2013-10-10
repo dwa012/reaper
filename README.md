@@ -24,8 +24,6 @@ The tasks are scoped to the reaper namespace.
 
 Each target can take a list of models if you wish to target a subset of the server models.
 
-[Big Android BBQ 2013 Presentation Slides](http://goo.gl/z92UPq)
-
 ### API Controller
 
 When you create the Rails API controller, a routes file is generated. You can either copy the routes into your regular routes file or add the following to your `application.rb`.
