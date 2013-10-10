@@ -12,14 +12,17 @@ And then execute:
 
     $ bundle install
 
-Or install it yourself as:
-
-    $ gem install reaper
 
 ## Usage
 
 Reaper is a set of tasks that help connect your Rails server to iOS and Android devices.
-These task read the models 
+These task read the models in your rails applicaiton and create all the code need to connect to the server. Follow the simple guide for the platform you wish to target.
+
+The tasks are scoped to the reaper namespace.
+
+	rake reaper:TARGET_PLATFORM [MODEL[,MODEL]]
+
+Each target can take a list of models if you wish to target a subset of the server models.
 
 [Big Android BBQ 2013 Presentation Slides](http://goo.gl/z92UPq)
 
