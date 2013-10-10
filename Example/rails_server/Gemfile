@@ -25,4 +25,4 @@ end
 
 gem 'jquery-rails'
 
-gem 'reaper', :path => '/Users/danielward/Development/reaper'
+gem 'reaper', :git => 'https://github.com/dwa012/reaper.git'
