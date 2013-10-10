@@ -6,11 +6,11 @@ Tested with Ruby 2 and Rails 3.2.x
 
 Add this line to your application's Gemfile:
 
-    gem 'reaper'
+    gem 'reaper', :git => 'https://github.com/dwa012/reaper.git'
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
@@ -62,7 +62,7 @@ Run `rake reaper:android` in the root of the Rails applicaiton.
 
 There is an example Android project provided that uses the Rails API server. To get the Albums from the example Rails server do something like the following:
 
-```java
+```
 AlbumAsync async = new AlbumAsync(this);
 async.fetchItems(new AsyncListener<Album>() {
     @Override
@@ -91,7 +91,7 @@ compile 'com.fasterxml.jackson.core:jackson-core:2.1.3'
 
 Maven
 
-```xml
+```
 <dependency>
   <groupId>com.fasterxml.jackson.core</groupId>
   <artifactId>jackson-annotations</artifactId>
