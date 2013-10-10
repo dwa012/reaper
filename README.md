@@ -143,4 +143,4 @@ To your Podfile
 
 ## Contributors
 
-@jchao
+jchao
