@@ -1,0 +1,53 @@
+<%= form_for(@track) do |f| %>
+  <% if @track.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@track.errors.count, "error") %> prohibited this track from being saved:</h2>
+
+      <ul>
+      <% @track.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :TrackId %><br />
+    <%= f.number_field :TrackId %>
+  </div>
+  <div class="field">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :AlbumId %><br />
+    <%= f.number_field :AlbumId %>
+  </div>
+  <div class="field">
+    <%= f.label :MediaTypeId %><br />
+    <%= f.number_field :MediaTypeId %>
+  </div>
+  <div class="field">
+    <%= f.label :GenreId %><br />
+    <%= f.number_field :GenreId %>
+  </div>
+  <div class="field">
+    <%= f.label :Composer %><br />
+    <%= f.text_field :Composer %>
+  </div>
+  <div class="field">
+    <%= f.label :Milliseconds %><br />
+    <%= f.number_field :Milliseconds %>
+  </div>
+  <div class="field">
+    <%= f.label :Bytes %><br />
+    <%= f.number_field :Bytes %>
+  </div>
+  <div class="field">
+    <%= f.label :UnitPrice %><br />
+    <%= f.text_field :UnitPrice %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,8 @@
+Used a sampel database from http://chinookdatabase.codeplex.com/releases/view/55681
+http://www.slideshare.net/silviorelli/rails-routes-off-the-tracks
+
+add this to applicaiton.rb to make the api routes work
+config.paths['config/routes'] << Rails.root.join('config/routes/api.rb')
+
+dates should be saved as UTC RFC3339
+this includes the database

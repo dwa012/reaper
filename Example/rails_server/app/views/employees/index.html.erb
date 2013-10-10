@@ -1,0 +1,51 @@
+<h1>Listing employees</h1>
+
+<table>
+  <tr>
+    <th>Employeeid</th>
+    <th>Lastname</th>
+    <th>Firstname</th>
+    <th>Title</th>
+    <th>Reportsto</th>
+    <th>Birthdate</th>
+    <th>Hiredate</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Country</th>
+    <th>Postalcode</th>
+    <th>Phone</th>
+    <th>Fax</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @employees.each do |employee| %>
+  <tr>
+    <td><%= employee.EmployeeId %></td>
+    <td><%= employee.LastName %></td>
+    <td><%= employee.FirstName %></td>
+    <td><%= employee.Title %></td>
+    <td><%= employee.ReportsTo %></td>
+    <td><%= employee.BirthDate %></td>
+    <td><%= employee.HireDate %></td>
+    <td><%= employee.Address %></td>
+    <td><%= employee.City %></td>
+    <td><%= employee.State %></td>
+    <td><%= employee.Country %></td>
+    <td><%= employee.PostalCode %></td>
+    <td><%= employee.Phone %></td>
+    <td><%= employee.Fax %></td>
+    <td><%= employee.Email %></td>
+    <td><%= link_to 'Show', employee %></td>
+    <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
+    <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Employee', new_employee_path %>

@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Trackid:</b>
+  <%= @track.TrackId %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @track.Name %>
+</p>
+
+<p>
+  <b>Albumid:</b>
+  <%= @track.AlbumId %>
+</p>
+
+<p>
+  <b>Mediatypeid:</b>
+  <%= @track.MediaTypeId %>
+</p>
+
+<p>
+  <b>Genreid:</b>
+  <%= @track.GenreId %>
+</p>
+
+<p>
+  <b>Composer:</b>
+  <%= @track.Composer %>
+</p>
+
+<p>
+  <b>Milliseconds:</b>
+  <%= @track.Milliseconds %>
+</p>
+
+<p>
+  <b>Bytes:</b>
+  <%= @track.Bytes %>
+</p>
+
+<p>
+  <b>Unitprice:</b>
+  <%= @track.UnitPrice %>
+</p>
+
+
+<%= link_to 'Edit', edit_track_path(@track) %> |
+<%= link_to 'Back', tracks_path %>

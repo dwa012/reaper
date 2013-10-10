@@ -1,0 +1,25 @@
+<%= form_for(@media_type) do |f| %>
+  <% if @media_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@media_type.errors.count, "error") %> prohibited this media_type from being saved:</h2>
+
+      <ul>
+      <% @media_type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :MediaTypeId %><br />
+    <%= f.number_field :MediaTypeId %>
+  </div>
+  <div class="field">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

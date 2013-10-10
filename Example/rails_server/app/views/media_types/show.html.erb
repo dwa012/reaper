@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mediatypeid:</b>
+  <%= @media_type.MediaTypeId %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @media_type.Name %>
+</p>
+
+
+<%= link_to 'Edit', edit_media_type_path(@media_type) %> |
+<%= link_to 'Back', media_types_path %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Invoicelineid:</b>
+  <%= @invoice_line.InvoiceLineId %>
+</p>
+
+<p>
+  <b>Trackid:</b>
+  <%= @invoice_line.TrackId %>
+</p>
+
+<p>
+  <b>Unitprice:</b>
+  <%= @invoice_line.UnitPrice %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @invoice_line.Quantity %>
+</p>
+
+
+<%= link_to 'Edit', edit_invoice_line_path(@invoice_line) %> |
+<%= link_to 'Back', invoice_lines_path %>

@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Invoiceid:</b>
+  <%= @invoice.InvoiceId %>
+</p>
+
+<p>
+  <b>Customerid:</b>
+  <%= @invoice.CustomerId %>
+</p>
+
+<p>
+  <b>Invoicedate:</b>
+  <%= @invoice.InvoiceDate %>
+</p>
+
+<p>
+  <b>Billingaddress:</b>
+  <%= @invoice.BillingAddress %>
+</p>
+
+<p>
+  <b>Billingcity:</b>
+  <%= @invoice.BillingCity %>
+</p>
+
+<p>
+  <b>Billingstate:</b>
+  <%= @invoice.BillingState %>
+</p>
+
+<p>
+  <b>Billingcountry:</b>
+  <%= @invoice.BillingCountry %>
+</p>
+
+<p>
+  <b>Billingpostalcode:</b>
+  <%= @invoice.BillingPostalCode %>
+</p>
+
+<p>
+  <b>Total:</b>
+  <%= @invoice.Total %>
+</p>
+
+
+<%= link_to 'Edit', edit_invoice_path(@invoice) %> |
+<%= link_to 'Back', invoices_path %>
