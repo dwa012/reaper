@@ -24,7 +24,7 @@ The tasks are scoped to the reaper namespace.
 
 Each target can take a list of models if you wish to target a subset of the server models.
 
-[Big Android BBQ 2013 Presentation Slides](http://goo.gl/z92UPq)
+[Big Android BBQ 2013 - Slides](http://goo.gl/z92UPq)
 
 ### API Controller
 
@@ -143,4 +143,4 @@ To your Podfile
 
 ## Contributors
 
-@jchao
+[Jorge Chao](https://github.com/jchao)
